@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Speakers</title>
+ <!-- External ccs stylesheet link -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<!--inline css stylesheet-->
+<style>
+    img {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         cursor: pointer;
+     }
+
+    .speaker-details {
+          display: none;
+          text-align: center;
+        }
+</style>
+<!--inline javascript that allows speaker images to be clicked and allows more details to appear when clicked-->
+ <script>
+    function toggleDetails(speakerId) {
+       var details = document.getElementById(speakerId + "-details");
+        details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        }
+</script>
+<body>
+    <header>
+      <!-- Header section with the title and navigation menu -->
+      <h1>Profile of speakers</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a> </li>
+                <li><a href="Registration.html">Registration</a> </li>
+                <li><a href="Contact.html">Contact</a> </li>
+                <li><a href="Schedule.html">Schedule</a> </li>
+                <li><a href="Speakers.html">Speakers</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+ <!-- The big three speakers -->
+    <img src="../images/SpeakersGroup.jpg" alt="Image of speakers The big three" style="width:360px;height:254px;" class="circular-image" onclick="toggleDetails('speaker')"><!--image of speakers-->
+        <div class="speaker-details" id="speaker-details">
+          <h2>The big three</h2>
+            <p>The big three will be attending techcon day 1 to speak about how as three best friends they created their own tech company
+              They will also be talking about: <br>
+              <li>How to start a business </li> <!--list of speakers topics-->
+              <li>Why you should start a business</li>
+              <li>Running a business in the tech company</li>
+            </p>
+        </div>
+ <!-- Speaker 1 -->
+    <img src="../images/speaker1.jpg" alt="Image of speaker James" style="width:360px;height:254px;" class="circular-image" onclick="toggleDetails('james')">
+        <div class="speaker-details" id="james-details">
+          <h2>James Atenji</h2>
+            <p>A Computer scientist lecturer at one of the top Russell Group universities<br>
+              He will also be talking about
+              <li>Being a computer science lecturer</li> 
+              <li>Encouraging and enabling students to aim high</li>
+            </p>
+        </div>
+  <!-- Speaker 2 -->
+      <img src="../images/speaker3.jpg" alt="Image of speaker Susan" style="width:360px;height:254px;" class="circular-image" onclick="toggleDetails('susan')">
+        <div class="speaker-details" id="susan-details">
+          <h2>Susan Solomon</h2>
+            <p>The youngest members part of the global women in tech society will be appearing to talk about being in the tech industry at such a young age and software she is developing
+              She will also be talking about:
+              <li>Being a woman in tech </li> 
+              <li>Being apart of the global woman in tech society</li>
+              <li>Being a young black woman in the industry</li>
+            </p>
+        </div>
+
+ <!-- Speaker 3 -->
+      <img src="../images/speaker4.jpg" alt="Image of speaker Mary" style="width:360px;height:254px;" class="circular-image" onclick="toggleDetails('mary')">
+        <div class="speaker-details" id="mary-details">
+          <h2>Mary Darius</h2>
+            <p>One of the founders of the women in tech global society will be talking about being a woman in tech, the struggles that come with it, and overcoming these struggles
+              She will also be talking about:
+              <li>Founding the global woman in tech society</li> 
+              <li>Running a business as a mum</li>
+              <li>Being a woman in tech</li>
+            </p>
+        </div>
+
+ <!-- Speaker 4 -->
+      <img src="../images/speaker5.jpg" alt="Image of speaker George" style="width:360px;height:254px;" class="circular-image" onclick="toggleDetails('george')">
+        <div class="speaker-details" id="george-details">
+          <h2>George Henry</h2>
+            <p>The CEO of TrueTech Industries will be making an appearance to talk about how and why he started his business and will be speaking about possible internships for youth who are interested
+              <li>How to start a business </li> 
+              <li>TrueTech internships</li>
+              <li>Joint talk with Jenny</li>
+              <li>Question and Answer</li>
+            </p>
+        </div>
+
+ <!-- Speaker 1 -->
+      <img src="../images/speaker6.jpg" alt="Image of speaker Jenny" style="width:360px;height:254px;" class="circular-image" onclick="toggleDetails('jenny')">
+        <div class="speaker-details" id="jenny-details">
+          <!-- List of specific points about Jenny's talk -->
+          <h2>Jenny Joe</h2>
+            <p>Jenny is one of George's old interns who has now gone on to work for one of the biggest companies in the industry. She will be talking about how much the internship helped her
+              <li>Joint talk with Joe </li> 
+              <li>Internship experience at TrueTech Industries</li>
+            </p>
+        </div>
+
+  <!-- Footer with contact information and links -->
+    <footer>
+        <h4>contact information:</h4>
+        <a href="TechconUK@gmail.com">TechconUK@gmail.com</a><br>
+        <h4>link to other pages</h4>
+        <a href="Index.html">Home</a>
+        <a href="Registration.html">Registration</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Schedule.html">Schedule</a>
+        <a href="Speakers.html">Speakers</a>
+        <h6>&copy; 2023 Contact Us. All rights reserved.</h6>
+    </footer>
+</body>
+
+</html>

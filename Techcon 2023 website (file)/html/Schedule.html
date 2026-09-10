@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+ <html lang="en"></html>
+    <head>
+        <title>Schedule</title>
+        <!-- External ccs stylesheet link -->
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+   <body>
+     <header>
+   <!-- Header section with the title and navigation menu -->
+       <h1>Conference schedule</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a> </li>
+                <li><a href="Registration.html">Registration</a> </li>
+                <li><a href="Contact.html">Contact</a> </li>
+                <li><a href="Schedule.html">Schedule</a> </li>
+                <li><a href="Speakers.html">Speakers</a> </li>
+            </ul>
+        </nav>
+      </header>
+ <!-- Label and dropdown menu for selecting conference days --> 
+    <label for="daySelector">Choose a day:</label>
+    <select id="daySelector" onchange="filterScheduele()">
+      <!-- Options for selecting different conference days -->
+      <option value="all">All 5 days:</option>
+      <option value="day1">Day 1:</option>
+      <option value="day2">Day 2:</option>
+      <option value="day3">Day 3:</option>
+      <option value="day4">Day 4:</option>
+      <option value="day5">Day 5:</option>
+    </select>
+
+<!-- 5 Tables for December techcon 2023 schedule -->
+    <h2>Monday 4th december:</h2>
+    <!--element id for drop down day chooser javascript-->
+    <table id="TableDay1">
+      <tr>
+        <!-- The 5 table headings -->
+        <th>Event</th>
+        <th>Conference hall</th>
+        <th>Speakers</th>
+        <th>Time</th>
+        <th>Main topics</th>
+      </tr>
+      <tr>
+        <td>Introduction to tech con</td>
+        <td>Main Conference hall 1</td>
+        <td>none</td>
+        <td>1pm-2pm </td>
+        <td>Techcon timetable</td>
+      </tr>
+      <!-- Additional rows for other events -->
+      <tr>
+        <td>Speaker</td>
+        <td>Main conference hall 1</td>
+        <td>The big three</td>
+        <td>2pm-5pm (there will be breaks inbetween for refreshments)</td>
+        <td><li>How to start a business </li> 
+              <li>Why you should start a business</li>
+              <li>Running a business in the tech company</li></td>
+      </tr>
+      <tr>
+        <td>Techcon fair</td>
+        <td>Main hall</td>
+        <td>5pm-6pm</td>
+        <td>none</td>
+        <td><li>games</li>
+            <li>refreshments</li>
+            <li>new software</li></td>
+      </tr>
+    </table>
+
+    <h2>Tuesday 6th december:</h2>
+    <table id="TableDay2">
+      <tr>
+        <th>Event</th>
+        <th>Conference hall</th>
+        <th>Speakers</th>
+        <th>Time</th>
+        <th>Main topics</th>
+      </tr>
+      <tr>
+        <td>Day 2 itinerary</td>
+        <td>Main Conference hall 1</td>
+        <td>none</td>
+        <td>1pm-2pm </td>
+        <td>Techcon timetable</td>
+      </tr>
+      <tr>
+        <td>Speaker</td>
+        <td>Main conference hall 2</td>
+        <td>James Atenji</td>
+        <td>2pm-5pm</td>
+        <td><li>Being a computer science lecturer</li> 
+              <li>Encouraging and enabling students to aim high</li></td>
+      </tr>
+      <tr>
+        <td>Techcon fair</td>
+        <td>Main hall</td>
+        <td>5pm-6pm</td>
+        <td>none</td>
+        <td><li>sales</li>
+            <li>sneak peaks</li></td>
+        </tr>
+    </table>
+
+    <h2>Wedenesday 7th december:</h2>
+    <table id="TableDay3">
+      <tr>
+        <th>Event</th>
+        <th>Conference hall</th>
+        <th>Speakers</th>
+        <th>Time</th>
+        <th>Main topics</th>
+      </tr>
+      <tr>
+        <td>Day 3 itinerary</td>
+        <td>Main Conference hall 1</td>
+        <td>none</td>
+        <td>9pm-11pm </td>
+        <td>Techcon timetable</td>
+      </tr>
+      <tr>
+        <td>Wedenesday</td>
+        <td>Conference hall 2</td>
+        <td>Susan Solomon</td>
+        <td>11am-1pm</td>
+        <td><li>Being a woman in tech </li> 
+            <li>Being apart of the global woman in tech society</li>
+            <li>Being a young black woman in the industry</li></td>
+      </tr>
+      <tr>
+        <td>Techcon fair</td>
+        <td>Main hall</td>
+        <td>1pm-3pm</td>
+        <td>none</td>
+        <td><li>buffet</li>
+            <li>refreshments</li>
+            <li>new software</li></td>
+      </tr>
+    </table>
+
+    <h2>Thursday 8th december:</h2>
+    <table id="TableDay4">
+      <tr>
+        <th>Event</th>
+        <th>Conference hall</th>
+        <th>Speakers</th>
+        <th>Time</th>
+        <th>Main topics</th>
+      </tr>
+      <tr>
+        <td>Day 4 itinerary</td>
+        <td>Main Conference hall 1</td>
+        <td>none</td>
+        <td>11am-1pm </td>
+        <td>Techcon timetable</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>Main conference hall 1</td>
+        <td>Mary Darius</td>
+        <td>2pm-4pm</td>
+        <td><li>Founding the global woman in tech society</li> 
+            <li>Running a business as a mum</li>
+            <li>Being a woman in tech</li></td>
+      </tr>
+      <tr>
+        <td>Techcon fair</td>
+        <td>Main hall</td>
+        <td>4pm-6pm</td>
+        <td>none</td>
+        <td><li>food</li>
+            <li>Artificial intelligence show</li>
+            <li>new software</li></td>
+      </tr>
+    </table> 
+    <h2>Friday 9th december:</h2>
+    <table id="TableDay5">
+      <tr>
+        <th>Event</th>
+        <th>Conference hall</th>
+        <th>Speakers</th>
+        <th>Time</th>
+        <th>Main topics</th>
+      </tr>
+      <tr>
+        <td>Day 5 itinerary</td>
+        <td>Main Conference hall 1</td>
+        <td>none</td>
+        <td>2pm-3pm </td>
+        <td>Techcon timetable</td>
+      </tr>
+      <tr>
+        <td>Techcon fair</td>
+        <td>Main hall</td>
+        <td>3pm-5pm</td>
+        <td>none</td>
+        <td><li>games</li>
+            <li>refreshments</li>
+            <li>new software</li></td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>Main conference hall 1</td>
+        <td>George Henry</td>
+        <td>5pm-8pm </td>
+        <td><li>How to start a business </li> 
+            <li>TrueTech internships</li>
+            <li>Joint talk with Jenny</li>
+            <li>Question and Answer</li></td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>Main conference hall 1</td>
+        <td>Jenny Joe</td>
+        <td>7pm-10pm</td>
+        <td><li>Joint talk with Joe </li> 
+              <li>Internship experience at TrueTech Industries</li></td>
+      </tr>
+     </table><br><br><br><!--breaks so theres spaces between the text and table-->
+    
+          <p>Throughout the conference the main entrance there will be individuals available to help with guiding you to conference halls. Beverages 
+            will also be available in the main entrance such as tea,coffee and biscuits.During the times conferences are happeining, before and after conferences 
+            there will be a technology fair where attendies will be able to gain access and purchase the hottest new tech. There will be stalls showcasing different 
+            different elements/job roles in the tech community and what work is done in these job roles.  </p>
+          
+  <!-- Footer with contact information and links -->
+        <footer>
+            <h4>contact information:</h4>
+            <a href="TechconUK@gmail.com">TechconUK@gmail.com</a><br></br>
+            <h4>link to other pages</h4>
+               <a href="Index.html">Home</a> 
+               <a href="Registration.html">Registration</a> 
+               <a href="Contact.html">Contact</a> 
+               <a href="Schedule.html">Schedule</a> 
+               <a href="Speakers.html">Speakers</a>
+               <h6>&copy; 2023 Contact Us. All rights reserved.</h6>
+        </footer>
+     <!-- JavaScript function to filter schedule based on selected day -->   
+    <script>
+        function filterScheduele(){
+          var selectedDay = document.getElementById("daySelector").value;
+        // Hide all schedule tables
+          document.getElementById("TableDay1").style.display="none";
+          document.getElementById("TableDay2").style.display="none";
+          document.getElementById("TableDay3").style.display="none";
+          document.getElementById("TableDay4").style.display="none";
+          document.getElementById("TableDay5").style.display="none";
+
+        // Display the selected day's schedule
+          if (selectedDay=="day1"){
+            document.getElementById("TableDay1").style.display="table";
+          } else if  (selectedDay=="day2"){
+            document.getElementById("TableDay2").style.display="table";
+          } else if  (selectedDay=="day3"){
+            document.getElementById("TableDay3").style.display="table";
+          } else if  (selectedDay=="day4"){
+            document.getElementById("TableDay4").style.display="table";
+          } else if  (selectedDay=="day5"){
+            document.getElementById("TableDay5").style.display="table";
+          } else { 
+            // Display all tables if "All" is selected
+            document.getElementById("TableDay1").style.display="table";
+            document.getElementById("TableDay2").style.display="table";
+            document.getElementById("TableDay3").style.display="table";
+            document.getElementById("TableDay4").style.display="table";
+            document.getElementById("TableDay5").style.display="table";
+          }
+        }
+    </script>
+
+   </body>
+ </html>

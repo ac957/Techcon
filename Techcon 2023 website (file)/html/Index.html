@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+ <html lang="en"></html>
+    <head>
+        <title>Homepage</title>
+        <!-- External ccs stylesheet link -->
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <!-- Header section with the title and navigation menu -->
+     <header>
+       <h1>Welcome to techcon 2023</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a> </li><!--links to 5 other pages-->
+                <li><a href="Registration.html">Registration</a> </li>
+                <li><a href="Contact.html">Contact</a> </li>
+                <li><a href="Schedule.html">Schedule</a> </li>
+                <li><a href="Speakers.html">Speakers</a> </li>
+            </ul>
+        </nav>
+      </header>
+      <!-- Main content of the homepage -->
+        <body>
+         <p>Techcon is an annual industrial conference aimed for programmers, engineers or individuals aspiring to seek jobs in these fields
+             to come together and talk about what they love. Everyone is welcome to attend techcon 
+             old and young! Techcon provides opportunities for individuals to network, make friends
+             with the same interests, learn new skills and have early access to the latest technology. 
+             Big names in the tech community will also be coming in on each day of techcon to speak about
+             there chosen topics and what inspired them to persue a career in the tech industry. More infromation 
+             about the speakers can be found on the speakers page.<br></br>
+        <!-- Section about the conference building with images -->
+          <h3>Building where the conference will be held</h3>
+        <div class="row">
+          <div class="column"> 
+            <img src="../images/conference2.jpg" alt="The building the conference will be held in" style="width:360px;height:254px;"><br></br>
+          </div>
+          <div class="column"></div>
+             <img src="../images/InsideConference.jpg" alt="The building the conference will be held in" style="width:360px;height:254px;">
+           </div>
+
+          <h2>Techcon uk 2023 will be held in:</h2>
+             <p>Leicester, England LE1 7HA, 60 lancaster road, Building: Geneva Place</p>
+           <!-- Embedded Google Map -->
+             <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2421.8831949270348!2d-1.1303394245461873!3d52.62595487838111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487761244f4d29c3%3A0x660bb48dc71f1f63!2sLancaster%20Rd%2C%20Leicester%20LE1%207HA!5e0!3m2!1sen!2suk!4v1701183033765!5m2!1sen!2suk" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+          <!--inline css that edits the image and alignes them horizontally-->  
+            <style>
+                img {
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                }
+
+                * {
+                box-sizing: border-box;
+                }
+                
+                .column {
+                 float: left;
+                 width: 33.33%; /* Set the width of the image */
+                 padding: 5px;
+                }
+
+                 .row::after {
+                 content: "";
+                 clear: both;
+                 display: table;
+                }
+             </style>
+             
+           <h2>Techcon dates:</h2> 
+              <ol>
+                <li>Monday 4th december 2023: 1pm-6pm</li>
+                <li>Tuesday 5th december 2023: 1pm-6pm</li>
+                <li>Wednesday 6th december 2023: 9am-3pm</li>
+                <li>Thursday 7th december 2023: 11am-6pm</li>
+                <li>Friday 8th december 2023: 2pm-10pm</li>
+              </ol>
+
+             <p>Would you like to attend techcon 2023? Head to the registration pege by clicking the registration now button.</p>
+        </p>
+        
+    <!-- Registration button with a link to the registration page -->
+      <form action="Registration.html">
+        <input type="submit" value="Click here to register Now" class="button">
+      </form> 
+
+<!-- Footer with contact information and links -->      
+        <footer>
+            <h4>contact information:</h4>
+            <a href="TechconUK@gmail.com">TechconUK@gmail.com</a><br>
+            <h4>link to other pages</h4>
+               <a href="Index.html">Home</a> 
+               <a href="Registration.html">Registration</a> 
+               <a href="Contact.html">Contact</a> 
+               <a href="Schedule.html">Schedule</a> 
+               <a href="Speakers.html">Speakers</a>
+               <h6>&copy; 2023 Contact Us. All rights reserved.</h6>
+        </footer>
+
+        </body>
+    
+ </html>

@@ -1,0 +1,99 @@
+/*  Styling for the body*/
+body {background-image: radial-gradient(grey,white); /*changes the background across all pages*/
+      margin:0;
+      color:white; /*Changes the colou of the text*/
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;/*changes the font*/
+}
+
+/*styling for the paragraph*/
+p{text-align:center;/*centers all paragraphs*/
+  font-size: 20px;
+}
+
+dd{font-size: 20px;}
+
+ol,h2,h3,h4,.registration{text-align:center;/*centers multiple elements simultaneously*/
+}
+
+/*styling for the heading 1 element*/
+h1 {
+    background-color:rgb(74, 74, 74);
+    padding: 40px;
+    text-align: center;
+    font-size :40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Styling for navigation bar */
+ul {
+  list-style-type: none;
+  padding:0;/*creates space around an element*/
+  overflow: hidden;
+  background-color: #333;
+  top:10px; 
+  width: 100%;
+}
+
+nav {
+  float: left;
+}
+
+nav a{
+  display: block;/*constructs list*/
+  color: white;
+  text-align: center;
+  padding:14px 16px;
+  text-decoration: none;
+}
+
+
+nav a :hover:not(.active) {
+  background-color: #111;/* Background color when the link is hovered over and not active*/
+}
+
+.active {
+  background-color:darkgray;
+}
+
+/*styling for the footer*/
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color:#333;
+  color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/*styles the table*/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+td, th {
+  border: 1px solid #fbf9f9;
+  text-align: left;
+  padding: 8px;
+}
+
+
+th{
+  background-color: #918f8f;
+}
+
+/* Styling for registration div */
+.registration{
+  text-align: center;
+}
+
+.circular-image {
+  width: 150px; /* Set the width of the image */
+  height: 150px; /* Set the height of an image*/
+  border-radius: 50%; /*makes image become circular */
+  object-fit: cover; /* Maintain ratio and covers the container */
+  display: block; /* Ensures that the image is treated as a block-level element */
+  margin: 0 auto; 
+}
